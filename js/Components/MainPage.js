@@ -1,11 +1,9 @@
-var React = require("react");
+import React, {Component} from "react";
 
-const MainPage = React.createClass({
-    render: function () {
+export default class MainPage extends Component {
+    render() {
         return <div>
             {this.props.data}
         </div>
     }
-});
-
-module.exports = MainPage;
+}
