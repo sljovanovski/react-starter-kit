@@ -11,7 +11,7 @@
   "author": "Bobi",
   "license": "ISC",
   "devDependencies": {
-    "axios": "^0.9.1",
+    "autoprefixer": "^6.3.6",
     "babel-loader": "^6.2.4",
     "browser-sync": "^2.11.1",
     "browser-sync-webpack-plugin": "^1.0.1",
@@ -23,9 +23,12 @@
     "babel-preset-stage-0": "^6.5.0",
     "webpack": "^1.12.2",
     "webpack-dependency-tree": "0.0.2",
-    "webpack-dev-server": "^1.11.0"
+    "webpack-dev-server": "^1.11.0",
+    "postcss-loader": "^0.8.2",
+    "eslint": "^2.7.0"
   },
   "dependencies": {
+    "axios": "^0.9.1",
     "css-loader": "^0.23.1",
     "history": "1.13.x",
     "json-loader": "^0.5.4",

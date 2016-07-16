@@ -1,4 +1,4 @@
-# react-starter-kit
+# Mindlinc Visual Linc
 
  - npm install
  - npm start

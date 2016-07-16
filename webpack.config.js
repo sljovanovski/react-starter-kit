@@ -2,6 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 var host = 'localhost';
 var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+var autoprefixer = require("autoprefixer");
 var port = 5000;
 
 var definePlugin = new webpack.DefinePlugin({
@@ -56,6 +57,9 @@ module.exports = {
             }
         ]
     },
+    postcss: [
+        autoprefixer
+    ],
     resolve: {
         extensions: ['', '.json', '.jsx', '.js']
     }

@@ -1,14 +1,20 @@
 var React = require("react");
+import {browserHistory} from "react-router";
 
 const App = React.createClass({
     getInitialState: function () {
         return {
-            data: "pero"
+            firstPage: "Main Page",
+            secondPage: "Second Page"
         }
+    },
+    redirect: function (route) {
+        browserHistory.push(route);
     },
     render: function () {
         return React.cloneElement(this.props.children, {
-            ...this.state
+            ...this.state,
+            redirect: this.redirect
         })
     }
 });
